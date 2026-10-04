@@ -40,28 +40,28 @@ async function showWeather(city) {
 
   mainTemp.textContent =
     data.main?.temp !== undefined
-      ? data.main.temp
+      ?  `${data.main.temp}° C`
       : "N/A";
 
   feelsLike.textContent =
     data.main?.feels_like !== undefined
-      ? data.main.feels_like
-      : "N/A";
+      ? `Feels Like: ${data.main.feels_like}° C`
+      :  "Feels Like: N/A";
 
   humidity.textContent =
     data.main?.humidity !== undefined
-      ? data.main.humidity
-      : "N/A";
+       ? `Humidity: ${data.main.humidity}%`
+      : "Humidity: N/A";
 
   wind.textContent =
     data.wind?.speed !== undefined
-      ? data.wind.speed
-      : "N/A";
+      ? `Wind: ${data.wind.speed} m/s`
+      : "Wind: N/A";
 
   windGust.textContent =
     data.wind?.gust !== undefined
-      ? data.wind.gust
-      : "N/A";
+     ? `Gusts: ${data.wind.gust} m/s`
+      : "Gusts: N/A";
 
   weatherMain.textContent =
     data.weather?.[0]?.main !== undefined

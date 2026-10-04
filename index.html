@@ -3,36 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
+    <div class="container">
+          <img id="weather-logo" src="weather-icon.png" alt="Weather icon">
+        
+          <div>
+              <select id="city-select">
+                <option value="" ></option>
+                <option value="new york">New York</option>
+                <option value="los angeles">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="london">London</option>
+              </select>
+              
+              <button id="get-weather-btn">Get weather</button>   
+         </div>
 
-    <button id="get-weather-btn">Get weather</button>
+          <div id="weather-container">
+            <img id="weather-icon" src=" " alt="Weather icon">
 
-    <select id="city-select">
-      <option value="" ></option>
-      <option value="new york">New York</option>
-      <option value="los angeles">Los Angeles</option>
-      <option value="chicago">Chicago</option>
-      <option value="paris">Paris</option>
-      <option value="tokyo">Tokyo</option>
-      <option value="london">London</option>
-    </select>
-
-     <div id="weather-container">
-      <img id="weather-icon" src="weather-icon.png" alt="Weather icon">
-
-      <p id="main-temperature"></p>
-      <p id="feels-like"></p>
-      <p id="humidity"></p>
-      <p id="wind"></p>
-      <p id="wind-gust"></p>
-      <p id="weather-main"></p>
-      <p id="location"></p>
+            <p id="main-temperature">Main Temprature:</p>
+            <p id="feels-like">Feels Like:</p>
+            <p id="humidity">Humidity:</p>
+            <p id="wind">Wind</p>
+            <p id="wind-gust">Gusts:</p>
+            <p id="weather-main">Weather-main:</p>
+            <p id="location">Location:</p>
+          </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="index.JS"></script>
   </body>
   
 </html>
