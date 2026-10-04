@@ -8,8 +8,17 @@
 
   <body>
     <div class="container">
-          <img id="weather-logo" src="weather-icon.png" alt="Weather icon">
-        
+          
+          <p id="location">Location</p>
+          <p id="weather-main">Weather-main</p>
+          <img id="weather-icon" src=" " alt="Weather icon">
+          
+          <div class="set1">
+              <p id="main-temperature">Main Temprature</p>
+              <p id="humidity">Humidity</p>
+              <p id="wind">Wind</p>
+          </div>
+
           <div>
               <select id="city-select">
                 <option value="" ></option>
@@ -20,20 +29,12 @@
                 <option value="tokyo">Tokyo</option>
                 <option value="london">London</option>
               </select>
-              
               <button id="get-weather-btn">Get weather</button>   
-         </div>
+          </div>
 
-          <div id="weather-container">
-            <img id="weather-icon" src=" " alt="Weather icon">
-
-            <p id="main-temperature">Main Temprature:</p>
-            <p id="feels-like">Feels Like:</p>
-            <p id="humidity">Humidity:</p>
-            <p id="wind">Wind</p>
-            <p id="wind-gust">Gusts:</p>
-            <p id="weather-main">Weather-main:</p>
-            <p id="location">Location:</p>
+          <div class="set2">
+            <p id="feels-like">Feels Like</p>
+            <p id="wind-gust">Wind Gust</p>
           </div>
     </div>
 

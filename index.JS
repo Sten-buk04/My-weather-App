@@ -60,8 +60,8 @@ async function showWeather(city) {
 
   windGust.textContent =
     data.wind?.gust !== undefined
-     ? `Gusts: ${data.wind.gust} m/s`
-      : "Gusts: N/A";
+     ? `Wind Gust: ${data.wind.gust} m/s`
+      : "Wind Gust: N/A";
 
   weatherMain.textContent =
     data.weather?.[0]?.main !== undefined
